@@ -1,0 +1,18 @@
+.productName {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+}
+
+.fa-trash-can {
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.purchase {
+    text-decoration: line-through;
+}

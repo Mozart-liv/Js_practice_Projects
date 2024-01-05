@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <!-- bootstarp  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .card-body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center ;
+            
+        }
+        .card-body h2{
+            font-size: 50px;
+        }
+        .btnFoc{
+            background-color: transparent;
+            color: white;
+        }
+        .btnBre{
+            background-color: #dc3545;
+            color: white;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="card position-absolute top-50 start-50 translate-middle bg-dark" style="width: 350px;">
+        <div class="card-header">
+            <h2 class="text-center p-3 text-white">Pomodoro</h2>
+        </div>
+        <div class="">
+            <div class="row d-flex p-4 " >
+                <button class="col btn btn-primary mx-3"  id="focus">Focus</button>
+                <button class="col btn btn-outline-danger mx-3"  id="shortBreak">Short Break</button>
+                
+            </div>
+            <div class="card-body m-4 focus">
+                <div class="ani">
+                    <div class="aniInner">
+                        <h2 class="pomodoro fw-bold text-white">25 : 00</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-footer d-flex p-3 mt-5">
+                <button class="col mx-3 btn btn-success" id="startBtn">Start</button>
+                <button class="col mx-3 btn btn-warning"id="restartBtn">Restart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="pomodoro.js"></script>
+</body>
+</html>
+
+<!-- let seconds =60,
+  minutes = 24;
+  pomodoro.textContent = 25 + " : " + 0 + "0"; -->

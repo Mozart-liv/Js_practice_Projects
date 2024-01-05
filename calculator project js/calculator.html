@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style type="text/css">
+      body {
+        background-color: aqua;
+      }
+      body .con {
+        width: 300px;
+        height: 600px;
+        background-color: #fff;
+
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      div h1 {
+        text-align: center;
+      }
+      form .input {
+        margin: 20px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .input .userinput {
+        height: 40px;
+        margin-top: 10px;
+
+        border-radius: 10px;
+      }
+      form button {
+        padding: 10px 100px;
+        margin-left: 20px;
+        margin-top: 30px;
+
+        border-radius: 10px;
+        background-color: blue;
+      }
+      .result{
+        text-align: end;
+        background-color: rgba(0, 0, 0, 0.712);
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      .error{
+        color: red;
+        margin: 3px ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <h1>Calculator</h1>
+
+      <div class="result" id="result">0</div>
+
+      <form action="">
+        <div class="input">
+          <label for="firstNum">Number One</label>
+          <input
+            type="number"
+            id="firstNum"
+            class="userinput"
+            placeholder="Enter number1"
+            required
+          />
+          <small class="error" id="num1Error">NumberOne required</small>
+        </div>
+        <div class="input">
+          <label for="secondNum">Number Two</label>
+          <input
+            type="number"
+            id="secondNum"
+            class="userinput"
+            placeholder="Enter number2"
+          />
+          <small class="error" id="num2Error">NumberTworequired</small>
+        </div>
+        <div class="input">
+          <label for="operator">Operator</label>
+          <select name="" id="operator" class="userinput">
+            <option value="">Choose Option</option>
+            <option value="add">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="division">/</option>
+          </select>
+          <small class="error" id="opError">Operator required</small>
+        </div>
+
+        <button type="button" id="calculate">Calculate</button>
+        
+      </form>
+    </div>
+  </body>
+  <script src="./calculator.js"></script>
+</html>
