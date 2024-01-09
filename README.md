@@ -15,3 +15,6 @@
 <a href="https://github.com/Mozart-liv/Js_practice_Projects/tree/master/shopping%20list">Shopping List</a>
 
 <a href="https://github.com/Mozart-liv/Js_practice_Projects/tree/master/weather">Weather app</a>
+
+<a href="https://github.com/Mozart-liv/Js_practice_Projects/tree/master/Dictionary%20App%20in%20JavaScript">Dictionary app</a>
+
